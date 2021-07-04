@@ -1,0 +1,71 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    padding: 10px;
+}
+
+#largebar {
+    animation: bars 1s ease infinite alternate 1s;
+    transform-origin: bottom;
+}
+
+#mediumbar {
+    animation: bars 1s ease infinite alternate 0.5s;
+    transform-origin: bottom;
+}
+
+#smallbar {
+    animation: bars 1s ease infinite alternate 0.25s;
+    transform-origin: bottom;
+}
+
+@keyframes bars {
+    from {
+        transform:scaleY(0)
+    }
+    to {
+        transform:scaleY(1)
+    }
+}
+
+#head {
+    animation: head 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes head {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-20deg);
+    }
+}
+
+#cards, #card {
+ animation: head 2s ease infinite alternate;
+ transform-origin: right;
+ transform-box: fill-box;
+}
+
+#shoe1, #shoe2 {
+    animation: shoe 1s ease infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes shoe {
+    from {
+        transform: skewY(0deg);
+    }
+    to {
+        transform: skewY(15deg);
+    }
+}
+
